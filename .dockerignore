@@ -1,0 +1,11 @@
+*
+!requirements.txt
+!forecast/
+!forecast/*.py
+!tests/
+!tests/*.py
+!scripts/
+!scripts/run_tests.sh
+!data/
+!data/train.csv
+!data/observed.csv

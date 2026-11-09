@@ -16,7 +16,7 @@ Forecast invoice revenue for the next 30 calendar days from an end-of-day foreca
 | 8 | Automatable ingestion | [Ingestion module](forecast/ingest.py) and [data script](scripts/fetch_data.sh) provide a function and command-line entry point. |
 | 9 | Multiple models compared | [Holdout metrics](reports/holdout_metrics.csv) compare ridge regression, random forest, gradient boosting and a trailing-30-day baseline where the training scope has signal. |
 | 10 | EDA visualizations | [EDA chart](reports/eda.png) shows revenue over time and the eight largest markets. |
-| 11 | Docker packaging | [Dockerfile](Dockerfile) packages the API, data, trained model and tests. [GitHub Actions](.github/workflows/verify.yml) builds the image, runs its tests and checks its HTTP endpoints. Docker execution still needs verification on a Docker-enabled runner. |
+| 11 | Docker packaging | [Dockerfile](Dockerfile) packages the API, data, trained model and tests. [GitHub Actions](.github/workflows/verify.yml) builds the image, runs its tests and checks its HTTP endpoints. See the [workflow runs](../../actions/workflows/verify.yml) for the Docker verification results. |
 | 12 | Visual model-to-baseline comparison | [Global holdout chart](reports/holdout_comparison.png) compares all three learned models with the baseline on the same forecast dates. |
 
 ## Run locally

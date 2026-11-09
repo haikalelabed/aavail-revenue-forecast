@@ -19,7 +19,7 @@ for _ in range(30):
     try:
         health = get("/health")
         break
-    except URLError:
+    except (URLError, ConnectionError, TimeoutError):
         time.sleep(1)
 else:
     raise SystemExit("Forecast API did not become ready")
